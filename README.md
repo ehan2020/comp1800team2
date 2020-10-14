@@ -6,6 +6,11 @@
 
 ## General Info
 This browser based web application to ...
+
+## Team Members
+Eunmee - index.html
+Taqwa - main.html
+Pariya - 
 	
 ## Technologies
 Technologies used for this project:
@@ -15,7 +20,7 @@ Technologies used for this project:
 * ...
 	
 ## Content
-Content of the project folder:
+Content of the project folder: working on
 
 ```
  Top level of project folder: 
