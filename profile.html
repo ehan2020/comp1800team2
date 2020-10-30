@@ -14,16 +14,113 @@
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href="styles/style.css">
 
+    <style>
+        .template {
+            padding: 60px;
+            display: grid;
+            grid-template-columns: 500px 300px;
+            grid-template-rows: 150px 300px;
+            grid-column-gap: 20px;
+        }
+
+        .info{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        img{
+            width: 100px;
+        }
+        
+        .contact {
+            float: right;
+            width: 400px;
+            height: 100px;
+            background-color: #F6ECF5;
+        }
+        
+        .list{
+            background-color: #F6ECF5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .friends{
+            background-color: #F6ECF5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+    </style>
+
 </head>
 
 <body>
-	<ul class="list-group">
-  		<li class="list-group-item">Cras justo odio</li>
-  		<li class="list-group-item">Dapibus ac facilisis in</li>
-  		<li class="list-group-item">Morbi leo risus</li>
-  		<li class="list-group-item">Porta ac consectetur ac</li>
- 		 <li class="list-group-item">Vestibulum at eros</li>
-	</ul>
+    <div class="template">
+        <div class="info">
+            <img src="/images/profile_picture_2_oZ1_icon.ico">
+            <div class="contact">
+                <p><br>Hi, Mary Green!<br>
+                    You are here as a <i>parent</i></p>
+            </div>
+        </div>
+        <div class="list">
+            <p>List of activities that Dylan is participating in:</p>
+            <ul>
+                <p>Social Activities:</p>
+                <li>/////</li>
+                <li>/////</li>
+                <li>/////</li>
+            </ul>
+            <ul>
+                <p>Academic Activities:</p>
+                <li>/////</li>
+                <li>/////</li>
+                <li>/////</li>
+            </ul>
+        </div>
+        <div class="friends">
+            <p>Dylan's Friends:</p>
+            <ul>
+                <li>
+                    /////
+                    <br>
+                    info: /////
+                </li>
+                <li>
+                    /////
+                    <br>
+                    info: /////
+                </li>
+                <li>
+                    /////
+                    <br>
+                    info: /////
+                </li>
+                <li>
+                    /////
+                    <br>
+                    info: /////
+                </li>
+                <li>
+                    /////
+                    <br>
+                    info: /////
+                </li>
+                <li>
+                    /////
+                    <br>
+                    info: /////
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
