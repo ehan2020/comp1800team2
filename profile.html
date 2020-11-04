@@ -15,33 +15,61 @@
     <link rel="stylesheet" href="styles/style.css">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+        body{
+            font-family: 'Itim', cursive;
+            background-color: #f2f2f2;
+        }
         .template {
             padding: 60px;
             display: grid;
-            grid-template-columns: 500px 300px;
-            grid-template-rows: 150px 300px;
+            grid-template-columns: 700px 500px;
+            grid-template-rows: 300px 550px;
             grid-column-gap: 20px;
+            font-size: 30px;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+
         }
 
-        .info{
+        .info {
+            padding: 5px;
             grid-row-start: 1;
             grid-row-end: 2;
             grid-column-start: 1;
             grid-column-end: 2;
+            border: inset;
+            border-radius: 20px;
+            border-color: #3e175c;
         }
 
-        img{
-            width: 100px;
+        img {
+            width: 250px;
+            border: solid;
+            border-color: #3e175c;
+            border-radius: 200px;
         }
-        
+
         .contact {
+            margin: 15px;
+            padding: 10px;
+            padding-left: 20px;
             float: right;
             width: 400px;
-            height: 100px;
+            height: 260px;
             background-color: #F6ECF5;
+            border: solid;
+            border-radius: 20px;
+            border-color: #F6ECF5;
         }
-        
-        .list{
+
+        .list {
+            padding: 20px;
+            border: inset;
+            border-radius: 20px;
+            border-color: #3e175c;
             background-color: #F6ECF5;
             grid-row-start: 2;
             grid-row-end: 3;
@@ -49,7 +77,17 @@
             grid-column-end: 2;
         }
 
-        .friends{
+        .list li{
+            font-family: 'Handlee', cursive;
+        }
+        #activity{
+            font-family: 'Handlee', cursive;
+        }
+        .friends {
+            padding: 10px;
+            border: inset;
+            border-radius: 20px;
+            border-color: #3e175c;
             background-color: #F6ECF5;
             grid-row-start: 1;
             grid-row-end: 3;
@@ -57,70 +95,152 @@
             grid-column-end: 3;
         }
 
+        #user {
+            text-align: left;
+            place-self: center;
+        }
+        #a, #d, #j{
+            font-size: 40px;
+            font-family: 'Handlee', cursive;
+        }
+        #a li{
+            font-size: 30px;
+            font-family: 'Handlee', cursive;
+        }
+        #d li{
+            font-size: 30px;
+            font-family: 'Handlee', cursive;
+        }
+        #j li{
+            font-size: 30px;
+            font-family: 'Handlee', cursive;
+        }
     </style>
 
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Social Kids</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Activities
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Social</a>
+                <a class="dropdown-item" href="#">Academic</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Request an activity?</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
     <div class="template">
         <div class="info">
             <img src="images/profile_picture.ico">
             <div class="contact">
-                <p><br>Hi, Mary Green!<br>
+                <p id="user"><br>Hi, Mary Green!<br>
                     You are here as a <i>parent</i></p>
             </div>
         </div>
         <div class="list">
             <p>List of activities that Dylan is participating in:</p>
             <ul>
-                <p>Social Activities:</p>
+                <p id="activity">Social Activities:</p>
                 <li>/////</li>
                 <li>/////</li>
                 <li>/////</li>
             </ul>
             <ul>
-                <p>Academic Activities:</p>
+                <p id="activity">Academic Activities:</p>
                 <li>/////</li>
                 <li>/////</li>
                 <li>/////</li>
             </ul>
         </div>
         <div class="friends">
-            <p>Dylan's Friends:</p>
+            <p id="friends">Dylan's Friends:</p>
             <ul>
-                <li>
-                    /////
-                    <br>
-                    info: /////
+                <li id="a">A:
+                    <ul>
+                        <li>
+                            /////
+                            <br>
+                            info: /////
+                        </li>
+                        <li>
+                            /////
+                            <br>
+                            info: /////
+                        </li>
+                        <li>
+                            /////
+                            <br>
+                            info: /////
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    /////
-                    <br>
-                    info: /////
+                <li id="d">D:
+                    <ul>
+                        <li>
+                            /////
+                            <br>
+                            info: /////
+                        </li>
+                        <li>
+                            /////
+                            <br>
+                            info: /////
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    /////
-                    <br>
-                    info: /////
+                <li id="j">J:
+                    <ul>
+                        <li>
+                            /////
+                            <br>
+                            info: /////
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    /////
-                    <br>
-                    info: /////
-                </li>
-                <li>
-                    /////
-                    <br>
-                    info: /////
-                </li>
-                <li>
-                    /////
-                    <br>
-                    info: /////
-                </li>
+                
             </ul>
         </div>
     </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+
+
 </body>
 
 </html>
