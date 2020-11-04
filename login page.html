@@ -1,56 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="utf-8">
+    <title>My BCIT Project</title>
+    <meta name="comp1800 boilerplate code" content="my bcit project">
+    <meta name="author" content="BCIT">
+
+    <!-- Bootstrap for Mobile-first, and JQuery -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <title>Login page</title>
+    <!-- Firebase CSS for Authentication UI -->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+    <!-- Optional CSS of your own -->
+    <link type="text/css" rel="stylesheet" href="styles/app.css" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
+    <style>
+        #searchB{
+            color: #251dbf;
+            border-color: #251dbf;
+        }
+    </style>
 </head>
 
-<body class="text-center" data-new-gr-c-s-check-loaded="14.981.0">
-    <form class="form-signin">
-        <img class="mb-4" src="images/login image.png" alt="login" width="272" height="242">
-        <h1 class="h3 mb-3 font-weight-normal">Login: </h1>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-        <br>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Social Kids</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Activities
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Social</a>
+                        <a class="dropdown-item" href="#">Academic</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Request an activity?</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="searchB" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit" formaction="profile.html" type="submit">Sign
-            In</button>
-        <p><a href="https://www.wikihow.com/Remember-a-Forgotten-Password">Forgot my password</a></p>
-    </form>
+    </nav>
+    <!-------------------------------------->
+    <!-- The following is HTML for layout -->
+    <!-------------------------------------->
+    <!-- Header Navigation Bar -->
 
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+
+    <!-- This is where the Login Widget will go -->
+    <h1 id="firebaseui-auth-container"></h1>
+
+    <!-------------------------------------------->
+    <!-- The following is JS for functionality  -->
+    <!-------------------------------------------->
+    <!-- Bootstrap libraries from CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+
+    <!-- Firebase libraries from CDN -->
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-
-    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
-
-    <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
-   <script src=”scripts/tp.js”></script>
+    <!-- Your own Firebase API key information -->
+    <script src="scripts/firebase_api_tp.js"> </script>
 
-
-</body>
-
-</html>
+    <!-- Your own JavaScript functions included here    -->
+    <script src="scripts/login.js"></script>
