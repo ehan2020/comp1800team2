@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -15,26 +17,40 @@
 
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body class="text-center" data-new-gr-c-s-check-loaded="14.981.0">
-      <form class="form-signin">
-          <img class="mb-4" src="images/login image.png" alt="login" width="272" height="242">
-          <h1 class="h3 mb-3 font-weight-normal">Login: </h1>
-          <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-          <br>
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-          <div class="checkbox mb-3">
-              <label>
-                  <input type="checkbox" value="remember-me"> Remember me
-              </label>
-          </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit" formaction="profile.html" type= "submit">Sign In</button>
-          <p><a href="https://www.wikihow.com/Remember-a-Forgotten-Password">Forgot my password</a></p>
-      </form>
-  
+<body class="text-center" data-new-gr-c-s-check-loaded="14.981.0">
+    <form class="form-signin">
+        <img class="mb-4" src="images/login image.png" alt="login" width="272" height="242">
+        <h1 class="h3 mb-3 font-weight-normal">Login: </h1>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+        <br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" formaction="profile.html" type="submit">Sign
+            In</button>
+        <p><a href="https://www.wikihow.com/Remember-a-Forgotten-Password">Forgot my password</a></p>
+    </form>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+   <script src=”scripts/tp.js”></script>
+
 
 </body>
+
 </html>
