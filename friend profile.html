@@ -15,37 +15,32 @@
     <link rel="stylesheet" href="styles/style.css">
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
-
-        body {
-            font-family: 'Itim', cursive;
-            background-color: #f2f2f2;
-        }
-
         .template {
-            padding: 60px;
             display: grid;
-            grid-template-columns: 700px 500px;
-            grid-template-rows: 300px 550px;
-            font-size: 30px;
+            grid-template-columns: 500px 350px 350px;
+            grid-template-rows: 400px 400px;
+            grid-column-gap: 20px;
+            font-size: 27px;
             grid-row-gap: 20px;
             grid-column-gap: 20px;
-
+            padding: 50px;
         }
 
         .info {
-            padding: 5px;
-            grid-row-start: 1;
-            grid-row-end: 2;
             grid-column-start: 1;
             grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            padding: 5px;
             border: inset;
             border-radius: 20px;
             border-color: #3e175c;
+            justify-content: center;
+            align-items: center;
         }
 
         img {
+            margin-left: 120px;
             width: 250px;
             border: solid;
             border-color: #3e175c;
@@ -55,76 +50,54 @@
         .contact {
             margin: 15px;
             padding: 10px;
-            padding-left: 20px;
-            float: right;
-            width: 400px;
-            height: 260px;
+            float: middle;
+            width: 450px;
+            height: 500px;
             background-color: #F6ECF5;
             border: solid;
             border-radius: 20px;
             border-color: #F6ECF5;
         }
 
-        .list {
-            padding: 20px;
-            border: inset;
-            border-radius: 20px;
-            border-color: #3e175c;
-            background-color: #F6ECF5;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-
-        .list li {
-            font-family: 'Handlee', cursive;
-        }
-
-        #activity {
-            font-family: 'Handlee', cursive;
-        }
-
-        .friends {
-            padding: 10px;
-            border: inset;
-            border-radius: 20px;
-            border-color: #3e175c;
-            background-color: #F6ECF5;
-            grid-row-start: 1;
-            grid-row-end: 3;
+        .activity {
             grid-column-start: 2;
             grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            padding: 5px;
+            border: inset;
+            border-radius: 20px;
+            border-color: #3e175c;
+            justify-content: center;
+            align-items: center;
         }
 
-        #user {
-            text-align: left;
-            place-self: center;
+        .interest {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            padding: 5px;
+            border: inset;
+            border-radius: 20px;
+            border-color: #3e175c;
+            justify-content: center;
+            align-items: center;
         }
 
-        #a,
-        #d,
-        #j {
-            font-size: 40px;
-            font-family: 'Handlee', cursive;
-        }
-
-        #a li {
-            font-size: 30px;
-            font-family: 'Handlee', cursive;
-        }
-
-        #d li {
-            font-size: 30px;
-            font-family: 'Handlee', cursive;
-        }
-
-        #j li {
-            font-size: 30px;
-            font-family: 'Handlee', cursive;
+        .rewards {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            padding: 5px;
+            border: inset;
+            border-radius: 20px;
+            border-color: #3e175c;
+            justify-content: center;
+            align-items: center;
         }
     </style>
-
 </head>
 
 <body>
@@ -162,80 +135,50 @@
             </form>
         </div>
     </nav>
+
     <div class="template">
         <div class="info">
-            <img src="images/profile_picture.ico">
+            <img src="images/friendpp1.ico" alt="friend's profile picture">
             <div class="contact">
-                <p id="user"><br>Hi, Mary Green!<br>
-                    You are here as a <i>parent</i></p>
+                <p id="name"></p>
+                <p id="id"></p>
+                <p id="parent"></p>
+                <p id="grade"></p>
             </div>
         </div>
-        <div class="list">
-            <p>List of activities that Dylan is participating in:</p>
-            <ul>
-                <p id="activity">Social Activities:</p>
-                <li>/////</li>
-                <li>/////</li>
-                <li>/////</li>
-            </ul>
-            <ul>
-                <p id="activity">Academic Activities:</p>
-                <li>/////</li>
-                <li>/////</li>
-                <li>/////</li>
-            </ul>
+        <div class="activity">
+            <p id="a1"></p>
+            <p id="a2"></p>
+            <p id="a3"></p>
+            <p id="a4"></p>
+            <p id="a5"></p>
         </div>
-        <div class="friends">
-            <p id="friends">Dylan's Friends:</p>
-            <ul>
-                <li id="a">A:
+        <div class="interest">
+            <p id="i1"></p>
+            <p id="i2"></p>
+            <p id="i3"></p>
+            <p id="i4"></p>
+        </div>
+        <div class="rewards">
+            <ol>
+                <li id="r1">
                     <ul>
-                        <li>
-                            <a id="a1" onclick="readFriend('a1')" href="friend profile.html">َAaliyah Theron</a>
-                            <br>
-                            info:
-                        </li>
-                        <li>
-                            <a id="a2" onclick="readFriend('a2')" href="friend profile.html">Adler Finely</a>
-                            <br>
-                            info: /////
-                        </li>
-                        <li>
-                            <a id="a3" onclick="readFriend('a3')" href="friend profile.html">Ashton Hawk</a>
-                            <br>
-                            info: /////
-                        </li>
+                        <li id="r1e"></li>
                     </ul>
                 </li>
-                <li id="d">D:
+                <li id="r2">
                     <ul>
-                        <li>
-                            <a id="d1" onclick="readFriend('d1')" href="friend profile.html">Davis Lynn</a>
-                            <br>
-                            info: /////
-                        </li>
-                        <li>
-                            <a id="d2" onclick="readFriend('d2')" href="friend profile.html">Dave Ripley</a>
-                            <br>
-                            info: /////
-                        </li>
+                        <li id="r2e"></li>
                     </ul>
                 </li>
-                <li id="j">J:
+                <li id="r3">
                     <ul>
-                        <li>
-                            <a id="j1" onclick="readFriend('j1')" href="friend profile.html">Johan Wenssel</a>
-                            <br>
-                            info: /////
-                        </li>
+                        <li id="r3e"></li>
                     </ul>
                 </li>
-
-            </ul>
+            </ol>
         </div>
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -247,8 +190,9 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
 
+
     <script src="scripts/firebase_api_tp.js"> </script>
-    <script src="scripts/profile.js"> </script>
+
     <script src="scripts/friendProfile.js"></script>
 
 </body>
