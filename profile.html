@@ -40,15 +40,15 @@
             grid-row-end: 2;
             grid-column-start: 1;
             grid-column-end: 2;
-            border: inset;
-            border-radius: 20px;
-            border-color: #3e175c;
+            border: groove;
+            border-radius: 2px;
+            border-color: #feb544;
         }
 
         img {
             width: 250px;
             border: solid;
-            border-color: #3e175c;
+            border-color: #b4e4ed;
             border-radius: 200px;
         }
 
@@ -59,18 +59,18 @@
             float: right;
             width: 400px;
             height: 260px;
-            background-color: #F6ECF5;
-            border: solid;
-            border-radius: 20px;
-            border-color: #F6ECF5;
+            background-color: #faebcf;
+            border: groove;
+            border-radius: 2px;
+            border-color: #feb544;
         }
 
         .list {
             padding: 20px;
-            border: inset;
-            border-radius: 20px;
-            border-color: #3e175c;
-            background-color: #F6ECF5;
+            border: groove;
+            border-radius: 2px;
+            border-color: #feb544;
+            background-color: #faebcf;
             grid-row-start: 2;
             grid-row-end: 3;
             grid-column-start: 1;
@@ -87,10 +87,10 @@
 
         .friends {
             padding: 10px;
-            border: inset;
-            border-radius: 20px;
-            border-color: #3e175c;
-            background-color: #F6ECF5;
+            border: groove;
+            border-radius: 2px;
+            border-color: #feb544;
+            background-color: #faebcf;
             grid-row-start: 1;
             grid-row-end: 3;
             grid-column-start: 2;
@@ -149,8 +149,8 @@
                         Activities
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Social</a>
-                        <a class="dropdown-item" href="#">Academic</a>
+                        <a class="dropdown-item" href="room.html">Social</a>
+                        <a class="dropdown-item" href="room.html">Academic</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Request an activity?</a>
                     </div>
@@ -247,7 +247,14 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
 
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
     <script src="scripts/firebase_api_tp.js"> </script>
+    
     <script src="scripts/profile.js"> </script>
     <script src="scripts/friendProfile.js"></script>
 
