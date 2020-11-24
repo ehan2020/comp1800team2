@@ -1,0 +1,105 @@
+body {
+    font-family: 'Itim', cursive;
+    background-color: #f2f2f2;
+}
+
+.template {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 700px 500px;
+    grid-template-rows: 300px 550px;
+    font-size: 30px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+}
+
+.info {
+    padding: 5px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: groove;
+    border-radius: 2px;
+    border-color: #feb544;
+}
+
+img {
+    width: 250px;
+    border: solid;
+    border-color: #b4e4ed;
+    border-radius: 200px;
+}
+
+.contact {
+    margin: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    float: right;
+    width: 400px;
+    height: 260px;
+    background-color: #faebcf;
+    border: groove;
+    border-radius: 2px;
+    border-color: #feb544;
+}
+
+.list {
+    padding: 20px;
+    border: groove;
+    border-radius: 2px;
+    border-color: #feb544;
+    background-color: #faebcf;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.list li {
+    font-family: 'Handlee', cursive;
+}
+
+#activity {
+    font-family: 'Handlee', cursive;
+}
+
+.friends {
+    padding: 10px;
+    border: groove;
+    border-radius: 2px;
+    border-color: #feb544;
+    background-color: #faebcf;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#user {
+    text-align: left;
+    place-self: center;
+}
+
+#a,
+#d,
+#j {
+    font-size: 40px;
+    font-family: 'Handlee', cursive;
+}
+
+#a li {
+    font-size: 30px;
+    font-family: 'Handlee', cursive;
+}
+
+#d li {
+    font-size: 30px;
+    font-family: 'Handlee', cursive;
+}
+
+#j li {
+    font-size: 30px;
+    font-family: 'Handlee', cursive;
+}

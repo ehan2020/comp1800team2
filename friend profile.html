@@ -14,90 +14,19 @@
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href="styles/style.css">
 
-    <style>
-        .template {
-            display: grid;
-            grid-template-columns: 500px 350px 350px;
-            grid-template-rows: 400px 400px;
-            grid-column-gap: 20px;
-            font-size: 27px;
-            grid-row-gap: 20px;
-            grid-column-gap: 20px;
-            padding: 50px;
-        }
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
-        .info {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 3;
-            padding: 5px;
-            border: inset;
-            border-radius: 2px;
-            border-color: #195d69;
-            justify-content: center;
-            align-items: center;
-        }
+    <script src="scripts/firebase_api_tp.js"> </script>
 
-        img {
-            margin-left: 120px;
-            width: 250px;
-            border: solid;
-            border-color: #195d69;
-            border-radius: 200px;
-        }
+    <script src="scripts/profile.js"></script>
+    <script src="scripts/friendProfile.js"></script>
 
-        .contact {
-            margin: 15px;
-            padding: 10px;
-            float: middle;
-            width: 450px;
-            height: 500px;
-            background-color: #dfebed;
-            border: solid;
-            border-radius: 2px;
-            border-color: #dfebed;
-        }
-
-        .activity {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            padding: 5px;
-            border: inset;
-            border-radius: 2px;
-            border-color: #195d69;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .interest {
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            padding: 5px;
-            border: inset;
-            border-radius: 2px;
-            border-color: #195d69;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .rewards {
-            grid-column-start: 2;
-            grid-column-end: 4;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            padding: 5px;
-            border: inset;
-            border-radius: 2px;
-            border-color: #195d69;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+    <link type="text/css" rel="stylesheet" href="styles/friends.css" />
+    
 </head>
 
 <body>
@@ -147,6 +76,7 @@
             </div>
         </div>
         <div class="activity">
+            <p>Activities</p>
             <p id="a1"></p>
             <p id="a2"></p>
             <p id="a3"></p>
@@ -154,12 +84,14 @@
             <p id="a5"></p>
         </div>
         <div class="interest">
+            <p>Interests</p>
             <p id="i1"></p>
             <p id="i2"></p>
             <p id="i3"></p>
             <p id="i4"></p>
         </div>
         <div class="rewards">
+            <p>Rewards</p>
             <ol>
                 <li id="r1">
                     <ul>
@@ -190,11 +122,9 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
 
+<script>getFriend();</script>
 
-    <script src="scripts/firebase_api_tp.js"> </script>
-
-    <script src="scripts/profile.js"></script>
-    <script src="scripts/friendProfile.js"></script>
+    
 
 </body>
 

@@ -14,116 +14,24 @@
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href="styles/style.css">
 
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+    <script src="scripts/firebase_api_tp.js"> </script>
+
+    <script src="scripts/profile.js"> </script>
+    <script src="scripts/friendProfile.js"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
-        body {
-            font-family: 'Itim', cursive;
-            background-color: #f2f2f2;
-        }
-
-        .template {
-            padding: 60px;
-            display: grid;
-            grid-template-columns: 700px 500px;
-            grid-template-rows: 300px 550px;
-            font-size: 30px;
-            grid-row-gap: 20px;
-            grid-column-gap: 20px;
-
-        }
-
-        .info {
-            padding: 5px;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            border: groove;
-            border-radius: 2px;
-            border-color: #feb544;
-        }
-
-        img {
-            width: 250px;
-            border: solid;
-            border-color: #b4e4ed;
-            border-radius: 200px;
-        }
-
-        .contact {
-            margin: 15px;
-            padding: 10px;
-            padding-left: 20px;
-            float: right;
-            width: 400px;
-            height: 260px;
-            background-color: #faebcf;
-            border: groove;
-            border-radius: 2px;
-            border-color: #feb544;
-        }
-
-        .list {
-            padding: 20px;
-            border: groove;
-            border-radius: 2px;
-            border-color: #feb544;
-            background-color: #faebcf;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-
-        .list li {
-            font-family: 'Handlee', cursive;
-        }
-
-        #activity {
-            font-family: 'Handlee', cursive;
-        }
-
-        .friends {
-            padding: 10px;
-            border: groove;
-            border-radius: 2px;
-            border-color: #feb544;
-            background-color: #faebcf;
-            grid-row-start: 1;
-            grid-row-end: 3;
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
-
-        #user {
-            text-align: left;
-            place-self: center;
-        }
-
-        #a,
-        #d,
-        #j {
-            font-size: 40px;
-            font-family: 'Handlee', cursive;
-        }
-
-        #a li {
-            font-size: 30px;
-            font-family: 'Handlee', cursive;
-        }
-
-        #d li {
-            font-size: 30px;
-            font-family: 'Handlee', cursive;
-        }
-
-        #j li {
-            font-size: 30px;
-            font-family: 'Handlee', cursive;
-        }
     </style>
+
+<link type="text/css" rel="stylesheet" href="styles/profile.css" />
 
 </head>
 
@@ -191,17 +99,17 @@
                 <li id="a">A:
                     <ul>
                         <li>
-                            <a id="a1" onclick="readFriend('a1')" href="friend profile.html">َAaliyah Theron</a>
+                            <a id="a1" href="friend profile.html?a1">َAaliyah Theron</a>
                             <br>
                             info:
                         </li>
                         <li>
-                            <a id="a2" onclick="readFriend('a2')" href="friend profile.html">Adler Finely</a>
+                            <a id="a2" href="friend profile.html?a2">Adler Finely</a>
                             <br>
                             info: /////
                         </li>
                         <li>
-                            <a id="a3" onclick="readFriend('a3')" href="friend profile.html">Ashton Hawk</a>
+                            <a id="a3" href="friend profile.html?a3">Ashton Hawk</a>
                             <br>
                             info: /////
                         </li>
@@ -210,12 +118,12 @@
                 <li id="d">D:
                     <ul>
                         <li>
-                            <a id="d1" onclick="readFriend('d1')" href="friend profile.html">Davis Lynn</a>
+                            <a id="d1" href="friend profile.html?d1">Davis Lynn</a>
                             <br>
                             info: /////
                         </li>
                         <li>
-                            <a id="d2" onclick="readFriend('d2')" href="friend profile.html">Dave Ripley</a>
+                            <a id="d2" href="friend profile.html?d2">Dave Ripley</a>
                             <br>
                             info: /////
                         </li>
@@ -224,7 +132,7 @@
                 <li id="j">J:
                     <ul>
                         <li>
-                            <a id="j1" onclick="readFriend('j1')" href="friend profile.html">Johan Wenssel</a>
+                            <a id="j1" href="friend profile.html?j1">Johan Wenssel</a>
                             <br>
                             info: /////
                         </li>
@@ -247,16 +155,8 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
 
-    <!-- Firebase libraries from CDN -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
-
-    <script src="scripts/firebase_api_tp.js"> </script>
     
-    <script src="scripts/profile.js"> </script>
-    <script src="scripts/friendProfile.js"></script>
+    
 
 </body>
 

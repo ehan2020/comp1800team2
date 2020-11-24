@@ -1,0 +1,82 @@
+.template {
+    display: grid;
+    grid-template-columns: 500px 350px 350px;
+    grid-template-rows: 400px 400px;
+    grid-column-gap: 20px;
+    font-size: 27px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 50px;
+}
+
+.info {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 5px;
+    border: inset;
+    border-radius: 2px;
+    border-color: #195d69;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin-left: 120px;
+    width: 250px;
+    border: solid;
+    border-color: #1d686b;
+    border-radius: 200px;
+}
+
+.contact {
+    margin: 15px;
+    padding: 10px;
+    float: middle;
+    width: 450px;
+    height: 500px;
+    background-color: #9bd3b9;
+    border: solid;
+    border-radius: 2px;
+    border-color: #dfebed;
+}
+
+.activity {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 5px;
+    border: inset;
+    border-radius: 2px;
+    border-color: #1d686b;
+    justify-content: center;
+    align-items: center;
+}
+
+.interest {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 5px;
+    border: inset;
+    border-radius: 2px;
+    border-color: #1d686b;
+    justify-content: center;
+    align-items: center;
+}
+
+.rewards {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 5px;
+    border: inset;
+    border-radius: 2px;
+    border-color: #1d686b;
+    justify-content: center;
+    align-items: center;
+}
