@@ -7,6 +7,7 @@
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     padding: 50px;
+    background-color: #f5f5f5;
 }
 
 .info {
@@ -50,7 +51,7 @@ img {
     margin-left: 120px;
     width: 250px;
     border: solid;
-    border-color: #1d686b;
+    border-color: #599FFD;
     border-radius: 200px;
 }
 
@@ -78,6 +79,16 @@ img {
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     font-family: arial;
+}
+
+#act {
+    background-color: #74CD4E;
+    font-size: larger;
+}
+
+#int {
+    background-color: #face37;
+    font-size: larger;
 }
 
 .interest {
@@ -111,6 +122,30 @@ img {
 }
 
 
-#i1 #i2 #i3 #i4 {
-    font-size: 15px;;
+#i1 {
+    font-size: 22px;
+}
+#i2 {
+    font-size: 22px;
+}
+#i3 {
+    font-size: 22px;
+}
+#i4 {
+    font-size: 22px;
+}
+#a1 {
+    font-size: 22px;
+}
+#a2 {
+    font-size: 22px;
+}
+#a3 {
+    font-size: 22px;
+}
+#a4 {
+    font-size: 22px;
+}
+#a5 {
+    font-size: 22px;
 }

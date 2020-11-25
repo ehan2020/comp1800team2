@@ -25,7 +25,7 @@ function readFriendIds(ids){
     if(ids == "a1"){
         id = readFriendId("a1");
     }
-    else if(ids == a2){
+    else if(ids == "a2"){
         id = readFriendId("a2");
     }
     else if(ids == "a3"){
