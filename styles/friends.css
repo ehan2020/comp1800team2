@@ -17,10 +17,34 @@
     padding: 5px;
     border: inset;
     border-radius: 2px;
-    border-color: #195d69;
+    border-color: #232523;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
 }
+
+#chat {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #599FFD;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
+  }
+
+
+#par{
+    color: #15161525;
+    font-size: 20px;
+}
+
 
 img {
     margin-left: 120px;
@@ -36,10 +60,9 @@ img {
     float: middle;
     width: 450px;
     height: 500px;
-    background-color: #9bd3b9;
     border: solid;
     border-radius: 2px;
-    border-color: #dfebed;
+    border-color: #232523;
 }
 
 .activity {
@@ -53,6 +76,8 @@ img {
     border-color: #1d686b;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
 }
 
 .interest {
@@ -66,9 +91,11 @@ img {
     border-color: #1d686b;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
 }
 
-.rewards {
+.participate {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -79,4 +106,11 @@ img {
     border-color: #1d686b;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
+}
+
+
+#i1 #i2 #i3 #i4 {
+    font-size: 15px;;
 }
