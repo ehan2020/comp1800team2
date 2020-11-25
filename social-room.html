@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Main Page</title>
+  <title>Room Page</title>
   <meta name="comp1800 boilerplate code" content="my bcit project">
   <meta name="author" content="BCIT">
 
@@ -13,24 +13,33 @@
 
   <!-- Optional styles and scripts of your own -->
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/main.css">
 
   <style>
-    #carouselExampleIndicators{
-      width: 50%;
-      margin: 0 auto;
+    @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+    body{
+        font-family: 'Itim', cursive;
+        background-color: rgb(233, 238, 240);
     }
 
-    #headings{
-     text-align: center;
+    .card-body{
+      background-color: #FACE37;
     }
 
-    .banner {
-      position: relative;
-      margin-top:0em;
+    .navbar-brand{
+      color: #5999FD;
     }
-      
-  </style>
+
+    .heading{
+      text-align: center;
+      padding: 30px;
+    }
+
+    .navbar{
+      background-color:#5999FD;
+    }
+</style>
 
 </head>
 
@@ -61,8 +70,8 @@
             Activities
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="room.html">Social</a>
-            <a class="dropdown-item" href="room.html">Academic</a>
+            <a class="dropdown-item" href="social-room.html">Social</a>
+            <a class="dropdown-item" href="academic-room.html">Academic</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Request an activity?</a>
           </div>
@@ -75,20 +84,14 @@
     </div>
   </nav>
 
-  <h1 id="headings">Welcome [user]</h1>
-
-  <div class="banner">
-    <img src="images/banner.jpg" class="d-block w-100" alt="..." >
-  </div>
-
-  <h1 id="headings">Your upcoming activities...</h1>
+  <h1 class="heading">Social Activities</h1>
   <div class="container">
     <div class="row">
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
-          <img src="images/reading-circle.png" class="card-img-top" alt="..." height="180px">
+          <img src="images/coding.jpg" class="card-img-top" alt="" height="150px">
           <div class="card-body">
-            <h5 class="card-title">Reading Circle</h5>
+            <h5 class="card-title">Room 1</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <a href="#" class="btn btn-primary">Go to room</a>
@@ -97,9 +100,9 @@
       </div>
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
-          <img src="images/science-lab.jpg" class="card-img-top" alt="...">
-          <div class="card-body"
-            <h5 class="card-title">Science Lab</h5>
+          <img src="images/drawing.jpg" class="card-img-top" alt="" height="150px">
+          <div class="card-body">
+            <h5 class="card-title">Room 2</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <a href="#" class="btn btn-primary">Go to room</a>
@@ -108,9 +111,9 @@
       </div>
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
-          <img src="images/coding.jpg" class="card-img-top" alt="...">
+          <img src="images/reading.jpg" class="card-img-top" alt="" height="150px">
           <div class="card-body">
-            <h5 class="card-title">Coding Club</h5>
+            <h5 class="card-title">Room 3</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <a href="#" class="btn btn-primary">Go to room</a>
@@ -119,27 +122,6 @@
       </div>
     </div>
   </div>
-
-  <h1 id="headings">You might be interested in...</h1>
-
-  <h1 id="headings">Connect with...</h1>
-
-  <!-- <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form> -->
 
   <!----------------------------------------------->
   <!-- JS: Boostrap, Firebase, API related    -->
@@ -157,6 +139,8 @@
   <!--------------------------------------------------------------------->
   <!-- JS files: Your own JavaScript functions included here    -->
   <!--------------------------------------------------------------------->
+  <script src="scripts/room.js"> </script>
+
 
 </body>
 
