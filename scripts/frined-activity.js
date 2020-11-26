@@ -1,8 +1,8 @@
-var rand1 = Math.floor((Math.random() * 7) + 1);
-var rand2 = Math.floor((Math.random() * 7) + 1);
-var rand3 = Math.floor((Math.random() * 7) + 1);
-var rand4 = Math.floor((Math.random() * 7) + 1);
-var rand5 = Math.floor((Math.random() * 7) + 1);
+var rand1 = Math.floor((Math.random() * 9) + 1);
+var rand2 = Math.floor((Math.random() * 9) + 1);
+var rand3 = Math.floor((Math.random() * 9) + 1);
+var rand4 = Math.floor((Math.random() * 9) + 1);
+var rand5 = Math.floor((Math.random() * 9) + 1);
 
 
 function readActivity1(number){
@@ -46,6 +46,10 @@ if (rand1 == 1){
     readActivity1("a-r1");
 } else if (rand1 == 7){
     readActivity1("a-r2");
+} else if (rand1 == 8) {
+    readActivity1("a-r3")
+} else if (rand1 == 9) {
+    readActivity1(a-6);
 }
 
 if (rand2 == 1){
@@ -62,6 +66,10 @@ if (rand2 == 1){
     readActivity2("a-r1");
 } else if (rand2 == 7){
     readActivity2("a-r2");
+} else if (rand2 == 8) {
+    readActivity2("a-r3")
+} else if (rand2 == 9) {
+    readActivity2(a-6);
 }
 
 if (rand3 == 1){
@@ -78,6 +86,10 @@ if (rand3 == 1){
     readActivity3("a-r1");
 } else if (rand3 == 7){
     readActivity3("a-r2");
+} else if (rand3 == 8) {
+    readActivity3("a-r3")
+} else if (rand3 == 9) {
+    readActivity3(a-6);
 }
 
 if (rand4 == 1){
@@ -94,6 +106,10 @@ if (rand4 == 1){
     readActivity4("a-r1");
 } else if (rand4 == 7){
     readActivity4("a-r2");
+} else if (rand4 == 8) {
+    readActivity4("a-r3")
+} else if (rand4 == 9) {
+    readActivity4(a-6);
 }
 
 if (rand5 == 1){
@@ -110,4 +126,8 @@ if (rand5 == 1){
     readActivity5("a-r1");
 } else if (rand5 == 7){
     readActivity5("a-r2");
+} else if (rand5 == 8) {
+    readActivity5("a-r3")
+} else if (rand5 == 9) {
+    readActivity5(a-6);
 }
