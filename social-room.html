@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Room Page</title>
+  <title>SocialKids - Social Rooms</title>
   <meta name="comp1800 boilerplate code" content="my bcit project">
   <meta name="author" content="BCIT">
 
@@ -12,7 +12,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   <!-- Optional styles and scripts of your own -->
-  <link rel="stylesheet" href="styles/style.css">
+  <!-- <link rel="stylesheet" href="styles/style.css"> -->
+
+  <!-- Firebase libraries from CDN -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+  <script src="scripts/firebase_api_tp.js"> </script>
+  <script src="scripts/social-activity.js"></script>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
@@ -39,6 +48,11 @@
     .navbar{
       background-color:#5999FD;
     }
+
+    .col-sm{
+    margin: 20px;
+      
+    }
 </style>
 
 </head>
@@ -58,13 +72,13 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="profile.html">Profile</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown active">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Activities
@@ -73,7 +87,7 @@
             <a class="dropdown-item" href="social-room.html">Social</a>
             <a class="dropdown-item" href="academic-room.html">Academic</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Request an activity?</a>
+            <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScRuX0-AedS0qQGZAWWNb_n16YlorwoqJJ2rPSYrfs74dmufA/viewform?usp=pp_url" target="_blank">Request an activity?</a>
           </div>
         </li>
       </ul>
@@ -89,34 +103,61 @@
     <div class="row">
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
-          <img src="images/coding.jpg" class="card-img-top" alt="" height="150px">
+          <img src="images/baking-club.jpg" class="card-img-top" alt="" height="200px">
           <div class="card-body">
-            <h5 class="card-title">Room 1</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go to room</a>
+            <h5 class="card-title" id="room1">Room</h5>
+            <p class="card-text" id="active-content1"></p>
+            <a href="https://us05web.zoom.us/j/83750155316?pwd=M0VHRWlLK0FMdmN6V2Rwb0srYkhsQT09" class="btn btn-primary" target="_blank">Go to room</a>
           </div>
         </div>
       </div>
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
-          <img src="images/drawing.jpg" class="card-img-top" alt="" height="150px">
+          <img src="images/gaming-club.jpg" class="card-img-top" alt="" height="200px">
           <div class="card-body">
-            <h5 class="card-title">Room 2</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go to room</a>
+            <h5 class="card-title" id="room2">Room</h5>
+            <p class="card-text" id="active-content2"></p>
+            <a href="https://us05web.zoom.us/j/83750155316?pwd=M0VHRWlLK0FMdmN6V2Rwb0srYkhsQT09" class="btn btn-primary" target="_blank">Go to room</a>
           </div>
         </div>
       </div>
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
-          <img src="images/reading.jpg" class="card-img-top" alt="" height="150px">
+          <img src="images/gardening-club.jpg" class="card-img-top" alt="" height="200px">
           <div class="card-body">
-            <h5 class="card-title">Room 3</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go to room</a>
+            <h5 class="card-title" id="room3">Room</h5>
+            <p class="card-text" id="active-content3"></p>
+            <a href="https://us05web.zoom.us/j/83750155316?pwd=M0VHRWlLK0FMdmN6V2Rwb0srYkhsQT09" class="btn btn-primary" target="_blank">Go to room</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <img src="images/astronomy-club.jpg" class="card-img-top" alt="" height="200px">
+          <div class="card-body">
+            <h5 class="card-title" id="room4">Room</h5>
+            <p class="card-text" id="active-content4"></p>
+            <a href="https://us05web.zoom.us/j/83750155316?pwd=M0VHRWlLK0FMdmN6V2Rwb0srYkhsQT09" class="btn btn-primary" target="_blank">Go to room</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <img src="images/art-club.jpg" class="card-img-top" alt="" height="200px">
+          <div class="card-body">
+            <h5 class="card-title" id="room5">Room</h5>
+            <p class="card-text" id="active-content5"></p>
+            <a href="https://us05web.zoom.us/j/83750155316?pwd=M0VHRWlLK0FMdmN6V2Rwb0srYkhsQT09" class="btn btn-primary" target="_blank">Go to room</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <img src="images/reading-club.jpg" class="card-img-top" alt="" height="200px">
+          <div class="card-body">
+            <h5 class="card-title" id="room6">Room</h5>
+            <p class="card-text" id="active-content6"></p>
+            <a href="https://us05web.zoom.us/j/83750155316?pwd=M0VHRWlLK0FMdmN6V2Rwb0srYkhsQT09" class="btn btn-primary" target="_blank">Go to room</a>
           </div>
         </div>
       </div>
@@ -136,10 +177,7 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
-  <!--------------------------------------------------------------------->
-  <!-- JS files: Your own JavaScript functions included here    -->
-  <!--------------------------------------------------------------------->
-  <script src="scripts/room.js"> </script>
+ 
 
 
 </body>
