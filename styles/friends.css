@@ -23,6 +23,7 @@
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     font-family: arial;
+    background-color: #fdfaf3;
 }
 
 #chat {
@@ -41,8 +42,8 @@
   }
 
 
-#par{
-    color: #15161525;
+.contact > #par{
+    color: #232523;
     font-size: 20px;
 }
 
@@ -65,6 +66,7 @@ img {
     border: solid;
     border-radius: 2px;
     border-color: #232523;
+    background-color: #f1f4ff;
 }
 
 .activity {
@@ -80,6 +82,7 @@ img {
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     font-family: arial;
+    background-color: #f3ffee;
 }
 
 #act {
@@ -105,6 +108,7 @@ img {
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     font-family: arial;
+    background-color: #fdfaf3;
 }
 
 .participate {
