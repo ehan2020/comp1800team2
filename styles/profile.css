@@ -1,5 +1,5 @@
 body {
-    font-family: 'Itim', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f2f2f2;
 }
 
@@ -22,14 +22,17 @@ body {
     grid-column-end: 2;
     border: groove;
     border-radius: 2px;
-    border-color: #feb544;
+    border-color: #74cd4e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f3ffee;
 }
 
 img {
     width: 250px;
     border: solid;
-    border-color: #b4e4ed;
+    border-color: #599ffd;
     border-radius: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .contact {
@@ -39,42 +42,50 @@ img {
     float: right;
     width: 400px;
     height: 260px;
-    background-color: #faebcf;
+    background-color: #fffdf8;
     border: groove;
     border-radius: 2px;
-    border-color: #feb544;
+    border-color: #face37;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .list {
     padding: 20px;
     border: groove;
     border-radius: 2px;
-    border-color: #feb544;
-    background-color: #faebcf;
+    border-color: #face37;
+    background-color: #fdfaf3;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.list li {
-    font-family: 'Handlee', cursive;
+#Aactivity {
+    background-color: #face37;
+}
+#Sactivity {
+    background-color: #face37;
 }
 
-#activity {
-    font-family: 'Handlee', cursive;
+#friends {
+    background-color: #599ffd;
 }
+
+
 
 .friends {
     padding: 10px;
     border: groove;
     border-radius: 2px;
-    border-color: #feb544;
-    background-color: #faebcf;
+    border-color: #599ffd;
+    background-color: #f1f4ff;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #user {
@@ -86,20 +97,16 @@ img {
 #d,
 #j {
     font-size: 40px;
-    font-family: 'Handlee', cursive;
 }
 
 #a li {
     font-size: 30px;
-    font-family: 'Handlee', cursive;
 }
 
 #d li {
     font-size: 30px;
-    font-family: 'Handlee', cursive;
 }
 
 #j li {
     font-size: 30px;
-    font-family: 'Handlee', cursive;
 }
