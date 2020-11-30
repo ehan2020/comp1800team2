@@ -34,37 +34,102 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="main.html">Social Kids</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="profile.html">Profile</a>
-        </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Activities
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="social-room.html">Social</a>
-            <a class="dropdown-item" href="academic-room.html">Academic</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScRuX0-AedS0qQGZAWWNb_n16YlorwoqJJ2rPSYrfs74dmufA/viewform?usp=pp_url" target="_blank">Request an activity?</a>
-          </div>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="main.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+                            stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 22V12H15V22" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9H9.01" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9H15.01" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Profile</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21 16V7.99999C20.9996 7.64927 20.9071 7.3048 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.26999L13 2.26999C12.696 2.09446 12.3511 2.00204 12 2.00204C11.6489 2.00204 11.304 2.09446 11 2.26999L4 6.26999C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.3048 3.00036 7.64927 3 7.99999V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z"
+                            stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.5 4.21001L12 6.81001L16.5 4.21001" stroke="#111111" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.5 19.79V14.6L3 12" stroke="#111111" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M21 12L16.5 14.6V19.79" stroke="#111111" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M3.27 6.96001L12 12.01L20.73 6.96001" stroke="#111111" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 22.08V12" stroke="#111111" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                    Activities
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="social-room.html"><svg width="23" height="21" viewBox="0 0 23 21"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M16.2916 18.375V16.625C16.2916 15.6967 15.8878 14.8065 15.1689 14.1501C14.45 13.4937 13.475 13.125 12.4583 13.125H4.79165C3.77498 13.125 2.79996 13.4937 2.08107 14.1501C1.36218 14.8065 0.958313 15.6967 0.958313 16.625V18.375"
+                                    stroke="#333333" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M8.62502 9.625C10.7421 9.625 12.4584 8.058 12.4584 6.125C12.4584 4.192 10.7421 2.625 8.62502 2.625C6.50793 2.625 4.79169 4.192 4.79169 6.125C4.79169 8.058 6.50793 9.625 8.62502 9.625Z"
+                                    stroke="#333333" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M22.0417 18.375V16.625C22.0411 15.8495 21.7584 15.0962 21.238 14.4833C20.7176 13.8704 19.9891 13.4326 19.1667 13.2388"
+                                    stroke="#333333" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M15.3333 2.73875C16.1579 2.93152 16.8887 3.36937 17.4106 3.98328C17.9325 4.59718 18.2158 5.35223 18.2158 6.12938C18.2158 6.90653 17.9325 7.66157 17.4106 8.27548C16.8887 8.88939 16.1579 9.32724 15.3333 9.52"
+                                    stroke="#333333" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="23" height="21" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        Social</a>
+                    <a class="dropdown-item" href="academic-room.html"><svg width="22" height="21"
+                            viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.83331 2.625H7.33331C8.30577 2.625 9.2384 2.99375 9.92604 3.65013C10.6137 4.3065 11 5.19674 11 6.125V18.375C11 17.6788 10.7102 17.0111 10.1945 16.5188C9.6788 16.0266 8.97933 15.75 8.24998 15.75H1.83331V2.625Z"
+                                stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M20.1667 2.625H14.6667C13.6942 2.625 12.7616 2.99375 12.0739 3.65013C11.3863 4.3065 11 5.19674 11 6.125V18.375C11 17.6788 11.2897 17.0111 11.8055 16.5188C12.3212 16.0266 13.0207 15.75 13.75 15.75H20.1667V2.625Z"
+                                stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Academic</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Request an activity?</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
-  </nav>
+</nav>
 
   <h1 class="heading">Social Activities</h1>
   <div class="container">
