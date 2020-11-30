@@ -5,16 +5,25 @@ body{
     font-family: 'Itim', cursive;
     background-color: rgb(233, 238, 240);
 }
-#carouselExampleIndicators{
-    width: 50%;
-    margin: 0 auto;
-  }
 
-  #headings{
-   text-align: center;
-  }
+.card-body{
+  background-color: #FACE37;
+}
 
-  .banner {
-    position: relative;
-    margin-top:0em;
-  }
+.navbar-brand{
+  color: #5999FD;
+}
+
+.heading{
+  text-align: center;
+  padding: 30px;
+}
+
+.navbar{
+  background-color:#5999FD;
+}
+
+.col-sm{
+margin: 20px;
+  
+}
