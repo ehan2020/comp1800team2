@@ -3,12 +3,12 @@
 
 body{
     font-family: 'Itim', cursive;
-    background-color: rgb(233, 238, 240);
+    background-color: #FACE37;
 }
-#carouselExampleIndicators{
+/* #carouselExampleIndicators{
     width: 50%;
     margin: 0 auto;
-  }
+  } */
 
   #headings{
    text-align: center;
@@ -21,4 +21,24 @@ body{
 
   #icon{
     color: black;
+  }
+
+  form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  #welcome-msg{
+    text-align: center;
+    margin: 30px;
+  }
+
+  .user-welcome {
+    background-color: rgb(233, 238, 240);
+    padding: 5px;
+  }
+
+  #headings {
+   padding: 20px;
   }
