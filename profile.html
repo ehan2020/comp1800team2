@@ -26,6 +26,7 @@
     <script src="scripts/friendProfile.js"></script>
     <script src="scripts/profile-activity.js"></script>
     <script src="scripts/status.js"></script>
+    <script src="https://kit.fontawesome.com/9d45baf70e.js" crossorigin="anonymous"></script>
 
 
     <style>
@@ -38,7 +39,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <a class="navbar-brand" href="main.html">Social Kids</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +48,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="main.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -58,7 +59,7 @@
                         </svg>
                         Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="profile.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -127,14 +128,15 @@
                             </svg>
                             Academic</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Request an activity?</a>
+                        <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScRuX0-AedS0qQGZAWWNb_n16YlorwoqJJ2rPSYrfs74dmufA/viewform?usp=pp_url" target="_blank">Request an activity?</a>
                     </div>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <div class="social-media">
+                <a id="icon" target="_blank" href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square fa-lg"></i></a>
+                <a id="icon" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-lg"></i></a>
+                <a id="icon" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-lg"></i></a>
+              </div>
         </div>
     </nav>
     <div class="template">
