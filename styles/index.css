@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap'); 
+
+body{
+    font-family: 'Itim', cursive;
+}
+
+.jumbotron{
+    background-color: #FACE37;
+    text-align: center;
+}
+
+.navbar{
+    background-color:#FACE37;
+    color: black;
+}
+

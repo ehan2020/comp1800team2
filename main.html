@@ -14,6 +14,15 @@
   <!-- Optional styles and scripts of your own -->
   <link rel="stylesheet" href="styles/main.css">
 
+  <!-- Firebase libraries from CDN -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+  <script src="scripts/firebase_api_tp.js"> </script>
+  <script src="scripts/main.js"></script>
+
 </head>
 
 <body>
@@ -111,7 +120,7 @@
                         </svg>
                         Academic</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Request an activity?</a>
+                    <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScRuX0-AedS0qQGZAWWNb_n16YlorwoqJJ2rPSYrfs74dmufA/viewform?usp=pp_url" target="_blank">Request an activity?</a>
                 </div>
             </li>
         </ul>
@@ -122,7 +131,7 @@
     </div>
 </nav>
 
-  <h1 id="headings">Welcome</h1>
+  <h1 id="welcome-msg">Welcome</h1>
 
   <div class="banner">
     <img src="images/banner.jpg" class="d-block w-100" alt="..." >
