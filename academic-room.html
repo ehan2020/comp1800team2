@@ -22,6 +22,7 @@
 
   <script src="scripts/firebase_api_tp.js"> </script>
   <script src="scripts/academic-activity.js"></script>
+  <script src="https://kit.fontawesome.com/9d45baf70e.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -31,7 +32,7 @@
   <!-- The following is HTML for layout -->
   <!-------------------------------------->
   <!-- Header Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <a class="navbar-brand" href="main.html">Social Kids</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +41,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="main.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -60,7 +61,7 @@
                     </svg>
                     Profile</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item active dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg width="24" height="24"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,10 +125,15 @@
                 </div>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <div class="social-media">
+          <a id="icon" target="_blank" href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square fa-lg"></i></a>
+          <a id="icon" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-lg"></i></a>
+          <a id="icon" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-lg"></i></a>
+        </div>
+        <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        </form> -->
     </div>
 </nav>
 

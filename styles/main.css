@@ -18,3 +18,7 @@ body{
     position: relative;
     margin-top:0em;
   }
+
+  #icon{
+    color: black;
+  }
