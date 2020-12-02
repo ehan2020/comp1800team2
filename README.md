@@ -1,16 +1,15 @@
-## My Web Application (Title)
+## My Web Application - Social Kids
 
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Contents](#content)
 
 ## General Info
-This browser based web application to ...
+This browser based web application to help parents and their children socialize through online activities.
 
 ## Team Members
-Eunmee - index.html
-Taqwa - main.html
-Pariya - 
+Taqwa 
+Pariya
 	
 ## Technologies
 Technologies used for this project:
