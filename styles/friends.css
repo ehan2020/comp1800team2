@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap'); 
+
+body {
+    font-family: 'Itim', cursive;
+}
 .template {
     display: grid;
     grid-template-columns: 500px 350px 350px;
@@ -22,7 +28,6 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    font-family: arial;
     background-color: #fdfaf3;
 }
 
@@ -38,7 +43,6 @@
     width: 100%;
     font-size: 18px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    font-family: arial;
   }
 
 
@@ -81,7 +85,6 @@ img {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    font-family: arial;
     background-color: #f3ffee;
 }
 
@@ -107,7 +110,6 @@ img {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    font-family: arial;
     background-color: #fdfaf3;
 }
 
@@ -123,7 +125,6 @@ img {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    font-family: arial;
 }
 
 
@@ -153,4 +154,8 @@ img {
 }
 #a5 {
     font-size: 22px;
+}
+
+#icon{
+    color: black;
 }
